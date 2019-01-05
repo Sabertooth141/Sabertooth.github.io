@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Black Ops One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(http://fonts.gstatic.font.im/s/blackopsone/v9/qWcsB6-ypo7xBdr6Xshe96H3aDvbtw.woff2) format('woff2');
+}
+
 h1{
 	color: white;
 	font-size: 600%;
