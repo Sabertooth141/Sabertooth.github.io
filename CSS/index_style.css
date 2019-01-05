@@ -1,16 +1,16 @@
 @font-face {
- font-family:Black Ops One;
+ font-family:font_1;
  src: url("black_ops_one.eot") /* EOT file for IE */
 }
 @font-face {
- font-family:Black Ops One;
+ font-family:font_1;
  src: url("black_ops_one.ttf") /* TTF file for CSS3 browsers */
 }
 
 h1{
 	color: white;
 	font-size: 600%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	margin-right: 70%;
 	margin-top: 20%;
 	text-shadow: 3px 3px 3px red;
@@ -37,7 +37,7 @@ h1{
 #H{
 	position: absolute;
 	font-size: 1000%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	margin-top: 13%;
 	margin-bottom: 0%;
 	margin-left: 33%;
@@ -136,7 +136,7 @@ h1{
 #G{
 	position: absolute;
 	font-size: 1000%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	margin-top: 13%;
 	margin-left: 41%;
 	color: skyblue;
@@ -206,7 +206,7 @@ h1{
 #to{
 	position: absolute;
 	font-size: 1000%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	margin-top: 13%;
 	margin-left: 49%;
 	color: skyblue;
@@ -311,7 +311,7 @@ h1{
 #g{
 	position: absolute;
 	font-size: 1000%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	margin-top: 13%;
 	margin-left: 55.5%;
 	color: skyblue;
@@ -368,7 +368,7 @@ h1{
 #about{
 	position: absolute;
 	font-size: 300%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	margin-top: 35%;
 	margin-left: 43%;
 	float: top;
@@ -432,7 +432,7 @@ h1{
 	margin-left: 120%;
 	white-space: nowrap;
 	margin-top: 0%;
-	font-family: Black Ops One;
+	font-family: font_1;
 	font-size: 180%;
 	transform: rotate(45deg);
 	transition: color .5s;
