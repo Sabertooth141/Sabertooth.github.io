@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Black Ops One';
-	src: url('..\black_ops_one.eot')
-	src: url('..\black_ops_one.ttf')
+	src: url('..\black_ops_one.eot');
+	src: url('..\black_ops_one.ttf');
 }
 
 h1{
