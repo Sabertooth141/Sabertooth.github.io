@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		@font-face {
+			font-family:font_1;
+			src: url("../black_ops_one.eot") /* EOT file for IE */
+		}
+		@font-face {
+			font-family:font_1;
+			src: url("../black_ops_one.ttf") /* TTF file for CSS3 browsers */
+		}
+		#menu_button{
+			margin-top: 2em;
+			margin-left: 1em;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 4px solid #4EEE94;
+			transform: rotate(-45deg);
+			float: left;
+		}
+		
+	</style>
+	<title>Searching Engine</title>
+	<link rel="stylesheet" type="text/css" href="../style_sheet/searching_engine_style_sheet.css">
+	<script type="text/javascript" src="../javascript/myScript.js"></script>
+	<link href="https://fonts.font.im/css?family=Audiowide|Iceland|Space+Mono" rel="stylesheet">
+	<link href="https://fonts.font.im/css?family=Aldrich|Bungee+Inline|Bungee+Shade|Monoton|Montserrat+Subrayada|Orbitron|Share+Tech+Mono|Special+Elite" rel="stylesheet"> 
+	<link rel="icon" type="image/x-icon" href="../picture/searching2.ico"/>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+	/jquery-1.4.min.js"></script>
+</head>
+<body background="../picture/searching_background.jpg" >
+
+
+	<div class="main">	
+		<div id="number">
+			<script type="text/javascript">
+				var num = 0;	
+				var t1 = setTimeout(function(){   
+					var t = setInterval(function(){
+						num ++;		       
+						var number = document.getElementById("number");		       
+						number.innerText = num;			        
+						if(num == 100){
+							clearInterval(t);		        
+						}       	        
+					},30);
+				},2000);
+			</script>
+		</div>
+
+		
+		<div class="line"></div>
+	</div>
+
+	<div id="main2">	
+		<div id="menu_button">
+			<p><a href="../HTML/menu.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>M</span><span>E</span><span>N</span><span>U</span></a></p>
+		</div>
+		<div class="searching" id="searching_block">
+
+				<div class="searching" id="searching_title">
+					Searching
+				</div>
+
+				<div class="searching" id="search">	
+					<div id="search_block">
+						<input type="text" name="search" value="enter here" />
+					</div>
+	
+					<div id="search_button">
+						<input type="submit" name="search" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
