@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.index_menu{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 5px solid #4EEE94;
+			transform: rotate(-45deg);
+		}
+		@font-face {
+			font-family:font_1;
+			src: url("black_ops_one.eot") /* EOT file for IE */
+		}
+		@font-face {
+			font-family:font_1;
+			src: url("black_ops_one.ttf") /* TTF file for CSS3 browsers */
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../style_sheet/index_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/generator.ico"/>
+	<title>
+		GPP Generator
+	</title>
+</head>
+<body bgcolor="black">
+	<div id="number">
+		<script type="text/javascript">
+			var num = 0;	
+			var t1 = setTimeout(function(){   
+				var t = setInterval(function(){
+					num ++;		       
+					var number = document.getElementById("number");		       
+					number.innerText = num;			        
+					if(num == 100){
+						clearInterval(t);		        
+					}       	        
+				},30);
+			},2000);
+		</script>
+	</div>
+	<div class="line"></div>
+	<div id="gpp_tag">
+		<div class="index_menu">
+			<p class="index"><a href="../index.html" style="text-decoration: none;"><span>H</span><span>O</span><span>M</span><span>E</span></a></p>
+		</div>
+	</div>
+
+</body>
+</html>

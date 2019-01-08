@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	@font-face {
+  font-family: 'Black Ops One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(http://fonts.gstatic.font.im/s/blackopsone/v9/qWcsB6-ypo7xBdr6Xshe96H3aDvbtw.woff2) format('woff2');
+}
+		.test span:nth-of-type(2){
+			animation-delay: .2s;
+		}
+		.test span:nth-of-type(3){
+			animation-delay: .26s;
+		}
+		.test span:nth-of-type(4){
+			animation-delay: .3s;
+		}
+		.test span{
+			font-size: 1000%;
+			opacity: 0;
+			transform: translate(-300px, 0) scale(0);
+			animation: test .2s forwards;
+		}
+		@keyframes test{
+			60% {
+    		transform: translate(20px, 0) scale(1);
+    		color: #b10e81;
+  			}
+  			80% {
+    		transform: translate(20px, 0) scale(1);
+    		color: #b10e81;
+  			}
+  			99% {
+    		transform: translate(0) scale(1.2);
+    		color: #00f0ff;
+  			}
+  			100% {
+    		transform: translate(0) scale(1);
+    		opacity: 1;
+    		color: #b10e81;
+  			}
+}
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="test" style="font-family: Black Ops One"> 
+		<span>t</span>
+		<span>e</span>
+		<span>s</span>
+		<span>t</span>
+	</div>
+</body>
+</html>

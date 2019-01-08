@@ -44,10 +44,8 @@ body{
 	top: 50%;
 	opacity: 0;
 	animation: loading 4s, loading_leaving 5s;
-
 	animation-delay: 2s;
 	animation-timing-function: ease;
-	
 }
    
 #number{
