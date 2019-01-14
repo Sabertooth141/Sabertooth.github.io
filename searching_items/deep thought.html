@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style_sheet/search_item_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/searching.ico"/>
+	<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+	<title>Search- Deep Thought</title>
+	<!-- <script type="text/javascript" src="../javascript/output.js"></script> -->
+	<script type="text/javascript">
+	    function print_the_cool_things() {	
+    		var str = "Deep Thought. \n\n“Think deeply takes time” -- Chris Prefect \n\nSuper computer that is created by Magratheans in order to solve the ultimate question, though Magratheans don’t know what exactly the ultimate question is. \n\nThe proposal of “the answer of everything” is given by Lunkwill and Fook, two programmers. \n\nThe answer “-42-” is given by Deep Thought to Loonquawl and Phouchg 7,500,000 years after the inquiry. \n\nThe algorithm of Deep Thought is a mystery, what we do know is that 7.5 million years is very long, however, the answer doesn’t work ideally. \n\nThus, Deep Thought gave out a solution, she creates the ultimate computer, the Earth to work out what the ultimate question is."
+
+			var the_target = document.getElementById("new");
+
+    		var pos=0;
+
+    		console.log(str);
+	    		timer = setInterval(function() {
+	    			the_target.innerText =str.substring(0,pos) + " << ";
+	    			pos++;
+	    			if (the_target.innerText == str) {
+	    					clearInterval(timer);
+	    			}
+    		},80);
+    	}
+	</script>
+</head>
+<body background="../picture/searching_background.jpg" onload="print_the_cool_things()">
+	<section class="contain">
+		<div class="side_l">
+			<div id="menu_button">
+				<p><a href="../HTML/Searching_engine.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>R</span><span>E</span><span>T</span><span>U</span><span>R</span><span>N</span></a></p>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search"></div>
+		</div>
+		<div class="main">
+			<div id="new">
+			
+			</div>
+		</div>
+		<div class="side_r"></div>
+	</section>
+</body>
+</html>

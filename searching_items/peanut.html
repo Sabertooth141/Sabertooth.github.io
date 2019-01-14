@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style_sheet/search_item_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/searching.ico"/>
+	<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+	<title>Search- Peanut</title>
+	<!-- <script type="text/javascript" src="../javascript/output.js"></script> -->
+	<script type="text/javascript">
+	    function print_the_cool_things() {	
+    		var str = "Peanuts \n\n“Peanuts never cheat on you.” -- Chris Prefect \n\nActually, you can’t eat towel... \n\nPeanuts represents the food that has necessary fat and salt. \n\nThis kind of food will provide necessary energy for a -Hitch Hiker-. \n\nPeanuts are hard and dry, which means that it is easy to preserve. \n\nPeanuts are relatively smaller than the energy bars, injections and some illegal stuff, which means they are more convenient to keep. \n\nBy the way, the only planet that produces suitable-size peanuts is the -Earth- due to the unique gravity and atmosphere pressure."
+
+			var the_target = document.getElementById("new");
+
+    		var pos=0;
+
+    		console.log(str);
+	    		timer = setInterval(function() {
+	    			the_target.innerText =str.substring(0,pos) + " << ";
+	    			pos++;
+	    			if (the_target.innerText == str) {
+	    					clearInterval(timer);
+	    			}
+    		},80);
+    	}
+	</script>
+</head>
+<body background="../picture/searching_background.jpg" onload="print_the_cool_things()">
+	<section class="contain">
+		<div class="side_l">
+			<div id="menu_button">
+				<p><a href="../HTML/Searching_engine.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>R</span><span>E</span><span>T</span><span>U</span><span>R</span><span>N</span></a></p>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search"></div>
+		</div>
+		<div class="main">
+			<div id="new">
+			
+			</div>
+		</div>
+		<div class="side_r"></div>
+	</section>
+</body>
+</html>

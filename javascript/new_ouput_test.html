@@ -1,0 +1,46 @@
+w<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Document</title>
+</head>
+<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+<body bgcolor="#ccc"  onload="print_the_cool_things()">  
+<h2 align="center">瞎JB打</h2>
+<br>
+
+<div id="text" style="	background-color:black;
+						color: rgb(173, 226, 224); 
+						cursor: default; 
+						font-family: 'Space Mono', monospace; 
+						font-size: 30px;
+						width: 50%;
+						height: 1000px;
+						margin: 0 auto" wrap=virtual>
+						</div>
+
+</body>
+<script type="text/javascript">
+
+    var the_target = document.getElementById("text");
+    
+    var str="Alcohol.<br><br>Whatever what the alcohol is, the best drink in the past is the -Pan Galactic Gargle Blaster-.<br><br>This book will not provide the way of producing and mixing anymore since this drink is widely banned by the Galaxy officials because its producer -Zaphod Beeblebrox- was once accused for the crime of stealing “due to drinking too much Pan Galactic Gargle Blaster”.<br><br>By the way, the feeling of drinking Pan Galactic Gargle Blaster is described as “having your brains smashed out by a slice of lemon wrapped round a large gold brick”.<br><br>Remember to be careful when trying something for the first time.";
+
+    var str2 = "Alcohol.\n\nWhatever what the alcohol is, the best drink in the past is the -Pan Galactic Gargle Blaster-.\n\nThis book will not provide the way of producing and mixing anymore since this drink is widely banned by the Galaxy officials because its producer -Zaphod Beeblebrox- was once accused for the crime of stealing “due to drinking too much Pan Galactic Gargle Blaster”.\n\nBy the way, the feeling of drinking Pan Galactic Gargle Blaster is described as “having your brains smashed out by a slice of lemon wrapped round a large gold brick”.\n\nRemember to be careful when trying something for the first time.";
+    var pos=0;
+
+    function print_the_cool_things()
+    	{	
+		    		timer = setInterval(function()
+		    			{
+			    			the_target.innerText =str2.substring(0,pos) + " << ";
+			    			pos++;
+			    			if (the_target.innerText == str2) 
+			    				{
+			    					clearInterval(timer);
+			    				}
+		    			},10);
+    	}
+ </script>
+ </html>

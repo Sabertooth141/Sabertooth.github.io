@@ -1,12 +1,3 @@
-@font-face {
- font-family:font_1;
- src: url("black_ops_one.eot") /* EOT file for IE */
-}
-@font-face {
- font-family:font_1;
- src: url("black_ops_one.ttf") /* TTF file for CSS3 browsers */
-}
-
 body{
 	background-size: cover;
 }
@@ -14,13 +5,26 @@ body{
 h1{
 	color: white;
 	font-size: 600%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	margin-right: 70%;
 	margin-top: 20%;
 	text-shadow: 3px 3px 3px red;
 	animation: head 4s forwards;
 	animation-delay: 8s;
 	float: right;
+}
+
+#about_title{
+	color: white;
+	font-size: 600%;
+	font-family: 'Black Ops One', cursive;
+	position: absolute;
+	margin-left: 5em;
+	margin-top: 2.6em;
+	text-shadow: 3px 3px 3px red;
+	animation: head 4s forwards;
+	animation-delay: .2s;
+	float: left;
 }
 
 @keyframes head{
@@ -51,7 +55,7 @@ h1{
 
 #number{
 	font-size: 140%;
-	font-family: 'font_1', monospace;
+	font-family: 'Black Ops One', cursive;
 	text-decoration-color: white;
 	color: white;
 	position: absolute;
@@ -105,7 +109,7 @@ h1{
 #H{
 	position: absolute;
 	font-size: 1000%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	margin-top: 18%;
 	margin-bottom: 0%;
 	margin-left: 33%;
@@ -204,7 +208,7 @@ h1{
 #G{
 	position: absolute;
 	font-size: 1000%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	margin-top: 18%;
 	margin-left: 41%;
 	color: skyblue;
@@ -274,7 +278,7 @@ h1{
 #to{
 	position: absolute;
 	font-size: 1000%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	margin-top: 18%;
 	margin-left: 49%;
 	color: skyblue;
@@ -379,7 +383,7 @@ h1{
 #g{
 	position: absolute;
 	font-size: 1000%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	margin-top: 18%;
 	margin-left: 55.5%;
 	color: skyblue;
@@ -436,7 +440,7 @@ h1{
 #explore{
 	position: absolute;
 	font-size: 360%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	margin-top: 35%;
 	margin-left: 48%;
 	float: top;
@@ -501,7 +505,7 @@ h1{
 	margin-left: 120%;
 	white-space: nowrap;
 	margin-top: 0%;
-	font-family: font_1;
+	font-family: 'Black Ops One', cursive;
 	font-size: 180%;
 	transform: rotate(45deg);
 	transition: color .5s;

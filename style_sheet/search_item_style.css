@@ -1,0 +1,139 @@
+body{
+	font-family: 'Black Ops One', cursive;
+	
+	background-size: cover;
+	
+}
+
+.search{
+	height: 50px;
+}
+
+.contain{
+	display: grid;
+	grid-template-columns: .15fr auto .15fr;
+	grid-template-rows: .4fr auto auto;
+	grid-gap: 10px;
+	grid-auto-flow: row;
+}
+
+.search_item{
+	width: 100%;
+	height: 600px;
+}
+
+.side_l{
+	grid-column: 1;
+	grid-row: 1/ 4;
+}
+
+.header{
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.main{
+	grid-column: 2;
+	grid-row: 2/ 4;
+}
+
+.side_r{
+	grid-column: 3;
+	grid-row: 1/ 4;
+}
+
+.header, .main{
+	background-color: black;
+}
+
+#menu_button{
+	margin-top: 1em;
+	margin-left: 1em;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 4px solid #4EEE94;
+	transform: rotate(-45deg);
+	float: left;
+}
+
+#menu_{
+	position: absolute;
+	transform: rotate(45deg);
+	margin-top: 1em;
+	margin-left: .1em;
+	font-size: 180%;
+	font-family: 'Black Ops One', cursive;
+	transition: color .5s;
+}
+
+#menu_ span{
+	font-family: 'Black Ops One', cursive;
+}
+
+#menu_button:hover span{
+	color: #4EEE94;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: menu_button .1s forwards;
+	text-shadow: 3px 3px 3px white;
+}
+
+@keyframes menu_button{
+	60% {
+    transform: translate(20px, 0) scale(1);
+	color: #4EEE94;
+	text-shadow: 3px 3px 3px white;
+	}
+	80% {
+	transform: translate(20px, 0) scale(1);
+	color: #4EEE94;
+	text-shadow: 3px 3px 3px white;
+	}
+	99% {
+	transform: translate(0) scale(1.2);
+	color: #CD0000;		
+	text-shadow: 4px 4px 4px gold;
+	}
+	100% {
+	transform: translate(0) scale(1);
+	opacity: 1;
+	color: #4EEE94;
+	text-shadow: 3px 3px 3px white;
+	}
+}
+
+#menu_button:hover span:nth-of-type(1){
+	animation-delay: .2s
+}
+
+#menu_button:hover span:nth-of-type(2){
+	animation-delay: .2s
+}
+
+#menu_button:hover span:nth-of-type(3){
+	animation-delay: .26s
+}
+
+#menu_button:hover span:nth-of-type(4){
+	animation-delay: .32s
+}
+
+#menu_button:hover span:nth-of-type(5){
+	animation-delay: .38s
+}
+
+#menu_button:hover span:nth-of-type(6){
+	animation-delay: .44s
+}
+
+#new{
+	background-color: black;
+	color: rgb(173, 226, 224); 
+	cursor: default; 
+	font-family: 'Space Mono', monospace; 
+	font-size: 30px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto
+}

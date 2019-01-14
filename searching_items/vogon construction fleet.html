@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style_sheet/search_item_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/searching.ico"/>
+	<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+	<title>Search- Vogon Construction Fleet</title>
+	<!-- <script type="text/javascript" src="../javascript/output.js"></script> -->
+	<script type="text/javascript">
+	    function print_the_cool_things() {	
+    		var str = "Vogon Construction Fleet \n\nHere is what to do if you want to get a lift from a Vogon: forget it. They are one of the most unpleasant races in the Galaxy. \n\nIronically, Vogon “Construction” Fleet destroyed the -Earth- several hundred years ago because they were commanded to build a bypass through the Earth. \n\nAnyway, being picked up by a Vogon Construction Fleet is actually not the ideal way of being picked up in the space since -Vogon- is mean and sometimes pretty unreasonable and ridiculous. \n\nOne of the fleet captain is -Prostetnic Vogon Jeltz-. \n\nThe fleet, according to rare video resources, consists of hundreds of ships which have the shape of a large rectangular blocks. \n\nEven though many people point out that this kind of design is for a concise and easy-going appearance, Vogons themselves consider the style as “easy to be remembered and counted when executing missions”. "
+
+			var the_target = document.getElementById("new");
+
+    		var pos=0;
+
+    		console.log(str);
+	    		timer = setInterval(function() {
+	    			the_target.innerText =str.substring(0,pos) + " << ";
+	    			pos++;
+	    			if (the_target.innerText == str) {
+	    					clearInterval(timer);
+	    			}
+    		},80);
+    	}
+	</script>
+</head>
+<body background="../picture/searching_background.jpg" onload="print_the_cool_things()">
+	<section class="contain">
+		<div class="side_l">
+			<div id="menu_button">
+				<p><a href="../HTML/Searching_engine.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>R</span><span>E</span><span>T</span><span>U</span><span>R</span><span>N</span></a></p>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search"></div>
+		</div>
+		<div class="main">
+			<div id="new">
+			
+			</div>
+		</div>
+		<div class="side_r"></div>
+	</section>
+</body>
+</html>
