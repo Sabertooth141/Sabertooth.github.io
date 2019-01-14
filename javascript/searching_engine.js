@@ -2,7 +2,7 @@
 
 
 
-let alist = ["Alcohol","Babel Fish","Bulldozer","Bypass","Deep Thought","Dentrassi","Digital Watched","Dolphins","The Earth","Encyclopedia Galactica","Ford Prefect","Genuine People Personality","Heart Of Gold","Indian Wrestling","Infinite Improbablity Drive","Magrathea","Oolon Colluphid","Peanuts","Petunia","Protestnic Vogon Jeltz","Sirius Cybernetics Corporation","Towel","Vogon Construction Fleet","Vogon"];
+let alist = ["Alcohol","Babel Fish","Bulldozer","Bypass","Deep Thought","Dentrassi","Digital Watched","Dolphins","The Earth","Encyclopedia Galactica","Ford Prefect","Genuine People Personality","Heart Of Gold","Indian Wrestling","Infinite Improbability Drive","Magrathea","Oolon Colluphid","Peanuts","Petunia","Protestnic Vogon Jeltz","Sirius Cybernetics Corporation","Towel","Vogon Construction Fleet","Vogon"];
 
 
 function do_sth()
