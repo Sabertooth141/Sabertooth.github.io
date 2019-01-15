@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style_sheet/search_item_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/searching.ico"/>
+	<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+	<title>Search- the Galaxy</title>
+	<!-- <script type="text/javascript" src="../javascript/output.js"></script> -->
+	<script type="text/javascript">
+	    function print_the_cool_things() {	
+    		var str = "the Galaxy \n\n\"The universe is always full of surprises.\" -- Jason Dent \n\nThe Galaxy is the stage where everything happens. \n\nMost people believed that this stage was created by god, but some belived in another theory -- since god was proven not exist. \n\nThey believed that the galaxy was created by a hyper-dimensional high-intelligent spieces, which accidentally put a seed in a random spot in this galaxy. \n\nThus begins the story of everything inside this galaxy. \n\nHowever this theory was strongly disagreed by the people who believed that god exists and thus a big debate was held to sort the problem out. \n\nHowever either side could not convince the other side to their version of the theory. \n\nThus a duty was given to a hyper-intelligent pan-dimensional spieces to figure out the answer to life, universe, and everything, who then build -Deep Thought- to figure out the answer. \n\nBut the answer was not out until 7.5 millions years later, and \"-42-\" was not really satisfying for everyone, so even until now the debate goes on."
+
+			var the_target = document.getElementById("new");
+
+    		var pos=0;
+
+    		console.log(str);
+	    		timer = setInterval(function() {
+	    			the_target.innerText =str.substring(0,pos) + " << ";
+	    			pos++;
+	    			if (the_target.innerText == str) {
+	    					clearInterval(timer);
+	    			}
+    		},80);
+    	}
+	</script>
+</head>
+<body background="../picture/searching_background.jpg" onload="print_the_cool_things()">
+	<section class="contain">
+		<div class="side_l">
+			<div id="menu_button">
+				<p><a href="../HTML/Searching_engine.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>R</span><span>E</span><span>T</span><span>U</span><span>R</span><span>N</span></a></p>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search"></div>
+		</div>
+		<div class="main">
+			<div id="new">
+			
+			</div>
+		</div>
+		<div class="side_r"></div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style_sheet/search_item_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/searching.ico"/>
+	<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+	<title>Search- Restaurant at the End of the Galaxy</title>
+	<!-- <script type="text/javascript" src="../javascript/output.js"></script> -->
+	<script type="text/javascript">
+	    function print_the_cool_things() {	
+    		var str = "Restaurant at the End of the Galaxy \n\n\"If you feel bored, you can always watch the end of the galaxy.\" -- Chris Prefect \n\nThe Restaurant at the End of the Galaxy is built exactly two minutes after the total destruction of the galaxy as we know it. \n\nTechnically speaking, the restaurant at the end of the galaxy can be entered through time travelling, also technically speaking one can travel to the restaurant an any moment. \n\nThe restaurant, technically, is built on a completely seperate timeline where the destruction of the galaxy is the only thing that happens on this timeline. \n\nTo get to the restaurant at the end of the galaxy, what you need to do is to go across the timeline, and travel between time to go to the timeline where the restaurant sits \n\nif you have completed the proccess correctly, you will find yourself at the front door of the restaurant, all you need to do is to walk inside."
+
+			var the_target = document.getElementById("new");
+
+    		var pos=0;
+
+    		console.log(str);
+	    		timer = setInterval(function() {
+	    			the_target.innerText =str.substring(0,pos) + " << ";
+	    			pos++;
+	    			if (the_target.innerText == str) {
+	    					clearInterval(timer);
+	    			}
+    		},80);
+    	}
+	</script>
+</head>
+<body background="../picture/searching_background.jpg" onload="print_the_cool_things()">
+	<section class="contain">
+		<div class="side_l">
+			<div id="menu_button">
+				<p><a href="../HTML/Searching_engine.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>R</span><span>E</span><span>T</span><span>U</span><span>R</span><span>N</span></a></p>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search"></div>
+		</div>
+		<div class="main">
+			<div id="new">
+			
+			</div>
+		</div>
+		<div class="side_r"></div>
+	</section>
+</body>
+</html>

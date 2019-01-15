@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style_sheet/search_item_style.css">
+	<link rel="icon" type="image/x-icon" href="../picture/searching.ico"/>
+	<link href="https://fonts.font.im/css?family=Space+Mono" rel="stylesheet"> 
+	<title>Search- The door</title>
+	<!-- <script type="text/javascript" src="../javascript/output.js"></script> -->
+	<script type="text/javascript">
+	    function print_the_cool_things() {	
+    		var str = "The Door\n\n“Don’t forget to close?” --Jason Dent\n\nThe Door can be defined as “having the following three functions”:\n\n1.The door keeps the objects you don’t want to outside of your room.\n\n2.The door keeps you inside your room so that no one know what you are doing.\n\n3.And you can still get out.\n\nAnd it’s better to get a door without Genuine People Personality.\n\nIf you are a deft, please forget the previous sentence.\n\nBy the way, since a door only has two movable part: a infrared detector and a door-hinge, and these two parts are fully used whenever the door is being closing or opening.\n\nIt explain why it will be self-satisfied.\n\nSo please make sure your room, or house, or whatever, has a door, in the right location.\n\n"
+
+			var the_target = document.getElementById("new");
+
+    		var pos=0;
+
+    		console.log(str);
+	    		timer = setInterval(function() {
+	    			the_target.innerText =str.substring(0,pos) + " << ";
+	    			pos++;
+	    			if (the_target.innerText == str) {
+	    					clearInterval(timer);
+	    			}
+    		},80);
+    	}
+	</script>
+</head>
+<body background="../picture/searching_background.jpg" onload="print_the_cool_things()">
+	<section class="contain">
+		<div class="side_l">
+			<div id="menu_button">
+				<p><a href="../HTML/Searching_engine.html" id="menu_" style=" color: transparent; text-decoration: none;"><span>R</span><span>E</span><span>T</span><span>U</span><span>R</span><span>N</span></a></p>
+			</div>
+		</div>
+		<div class="header">
+			<div class="search"></div>
+		</div>
+		<div class="main">
+			<div id="new">
+			
+			</div>
+		</div>
+		<div class="side_r"></div>
+	</section>
+</body>
+</html>
