@@ -1,32 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPEHTML>
 <html>
 <head>
-	<style type="text/css">
-		#circle{
-			width: 100px;
-			height: 100px;
-			border-radius: 60px;
-			border: solid 2px red;
-			display: inline-block;
-			position: absolute;
-		}
-	</style>
-	<title>ABOUT</title>
-	<link href="https://fonts.font.im/css?family=Black+Ops+One" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../style_sheet/index_style.css">
-	<link rel="icon" type="image/x-icon" href="../picture/about.ico"/>
+    <link rel="stylesheet" type="text/css" href="..\style_sheet\about_style.css">
 </head>
-<body bgcolor="purple">
-	<div id="about">
-		<p id="about_title">ABOUT</p>
-		<div id="circle">
-			<div class="blocks" style="margin-top: 0em"></div>
-			<div class="blocks"></div>
-			<div class="blocks"></div>
-		</div>
-		<div id="jason"></div>
-		<div id="chris"></div>
-		<div id="kevin"></div>
-	</div>
+<body >
+  <div class="index_menu" style="border: 5px solid #4EEE94;">
+          <p class="index"><a href="../index.html" style="text-decoration: none;"><span>H</span><span>O</span><span>M</span><span>E</span></a></p>
+
+  </div>
+  <div id="picture">
+      
+      <img src="..\picture\kevin.jpg" alt="" class="pic">
+      
+      <img src="..\picture\jason.jpg" alt="" class="pic">
+      <img src="..\picture\chris.jpg" alt="" class="pic">
+      
+
+    </div>
+  <div id="about_text">
+    <svg viewBox="0 400 1500 1200">
+
+    <!-- Symbol -->
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="50%" dy=".35em">ABOUT</text>
+    </symbol>  
+    <!-- Duplicate symbols -->
+
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+  
+    </svg>
+
+    
+
+  </div>
 </body>
 </html>

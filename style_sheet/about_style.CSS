@@ -1,0 +1,192 @@
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+
+
+.text {
+  fill: none;
+  stroke-width: 10px;
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.text:nth-child(3n + 1) {
+  stroke: #2C87FF;
+    animation: stroke 8s  ease-in-out forwards;  
+
+}
+.text:nth-child(3n + 2) {
+  stroke: #6DA3FF;
+animation: stroke1 8s  ease-in-out forwards;
+
+}
+
+.text:nth-child(3n + 3) {
+  stroke: #64C2FF;
+animation: stroke2 8s  ease-in-out forwards;
+
+}
+
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 82 160;
+  }
+}
+
+@keyframes stroke1 {
+  100% {
+    stroke-dashoffset: 1080;
+    stroke-dasharray: 82 160;
+  }
+}
+
+
+@keyframes stroke2 {
+  100% {
+    stroke-dashoffset: 1160;
+    stroke-dasharray: 82 160;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('../picture/about_background.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font:  10em/1 Open Sans, Impact;
+  
+  animation: about_moving 8s;
+}
+
+#about_text{
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0 auto;
+}
+
+@keyframes about_moving{
+  0%{
+    font: 40em/1 Open Sans, Impact;
+  }
+  100%{
+    font: 10em/1 Open Sans, Impact;
+  }
+}
+
+.pic{
+  width: 23%;
+  margin: 5%;
+  animation: pic_emerge 8s;
+}
+
+@keyframes pic_emerge{
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: .2;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.index_menu:hover {
+  width: 16px;
+  height: 16px;
+  border: 4px solid #00FFFF;
+}
+
+.index_menu{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-right: 10%;
+  transition: width .5s, height .5s;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #7FFFD4;
+  transform: rotate(-45deg);
+}
+
+.index_menu:hover span{
+  color: #4EEE94;
+  opacity: 0;
+  transform: translate(-300px, 0) scale(0);
+  animation: index_menu .1s forwards;
+  text-shadow: 3px 3px 3px white;
+}
+
+@keyframes index_menu{
+  60% {
+    transform: translate(20px, 0) scale(1);
+  color: #4EEE94;
+  text-shadow: 3px 3px 3px white;
+  }
+  80% {
+  transform: translate(20px, 0) scale(1);
+  color: #4EEE94;
+  text-shadow: 3px 3px 3px white;
+  }
+  99% {
+  transform: translate(0) scale(1.2);
+  color: #CD0000;   
+  text-shadow: 4px 4px 4px gold;
+  }
+  100% {
+  transform: translate(0) scale(1);
+  opacity: 1;
+  color: #4EEE94;
+  text-shadow: 3px 3px 3px white;
+  }
+}
+
+.index{
+  color: transparent;
+  margin-left: 120%;
+  white-space: nowrap;
+  margin-top: 0%;
+  font-family: 'Black Ops One', cursive;
+  font-size: 180%;
+  transform: rotate(45deg);
+  transition: color .5s;
+}
+
+.index span{
+  color: transparent;
+  transition: color .5s;
+}
+
+.index_menu:hover span:nth-of-type(1){
+  animation-delay: .2s
+}
+
+.index_menu:hover span:nth-of-type(2){
+  animation-delay: .2s
+}
+
+.index_menu:hover span:nth-of-type(3){
+  animation-delay: .26s
+}
+
+.index_menu:hover span:nth-of-type(4){
+  animation-delay: .32s
+}
