@@ -2,7 +2,7 @@
 
 
 
-let alist = ["Alcohol","Babel Fish","Bulldozer","Bypass","Deep Thought","Dentrassi","Digital Watched","Dolphins","The Earth","Encyclopedia Galactica","Ford Prefect","Genuine People Personality","Heart Of Gold","Indian Wrestling","Infinite Improbability Drive","Magrathea","Oolon Colluphid","Peanuts","Petunia","Prostetnic Vogon Jeltz","Sirius Cybernetics Corporation","Towel","Vogon Construction Fleet","Vogon","The Galaxy","Marvin","Restaurant at the End of the Galaxy","Arthur Dent","Zaphod Beeblebrox","Sperm Whale","Missiles","Sub-Etha Sens-O-Matic","Yooden Vranx","Eddie","Kill-O-Zap Gun","Majikthise","Philosopher","Slartibartfast","The Door","Vroomfondel"];
+let alist = ["Alcohol","Babel Fish","Bulldozer","Bypass","Deep Thought","Dentrassi","Digital Watch","Dolphins","The Earth","Encyclopedia Galactica","Ford Prefect","Genuine People Personality","Heart Of Gold","Indian Wrestling","Infinite Improbability Drive","Magrathea","Oolon Colluphid","Peanuts","Petunia","Prostetnic Vogon Jeltz","Sirius Cybernetics Corporation","Towel","Vogon Construction Fleet","Vogon","The Galaxy","Marvin","Restaurant at the End of the Galaxy","Arthur Dent","Zaphod Beeblebrox","Sperm Whale","Missiles","Sub-Etha Sens-O-Matic","Yooden Vranx","Eddie","Kill-O-Zap Gun","Majikthise","Philosopher","Slartibartfast","The Door","Vroomfondel"];
 
 
 function do_sth()

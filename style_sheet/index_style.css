@@ -183,6 +183,13 @@ h1{
 	animation-delay: .68s
 }
 
+#H:hover span:nth-of-type(11){
+	animation-delay: .74s
+}
+
+#H:hover span:nth-of-type(12){
+	animation-delay: .80s
+}
 #H:hover span{ 
 	color: #EEE685;
 	opacity: 0;
@@ -193,8 +200,8 @@ h1{
 #H:hover{
 	color: #EEE685;
 	text-shadow: 4px 4px 4px red;
-	margin-left: 4%;
-	transition: color .5s, text-shadow .5s, margin-left 2s;
+	margin-left: 0;
+	transition: color .5s, text-shadow .5s, margin-left 1.7s;
 	float: none;
 }
 

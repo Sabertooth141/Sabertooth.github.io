@@ -1,26 +1,11 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />            
-        <meta name="keywords" content="关键字1,关键字2" />        
-        <meta name="Description" content="描述信息" />
-        <title>循环滚动</title>
-        <!--CSS/JS-->
-        <style type="text/css">
-            *{margin:0;padding:0;}
-            ul,li{list-style:none;display:block;}
-            #scrollBox{height:400px;width:50%;margin:20px auto;background:#f09;overflow:hidden; align-content: center;}
-            #scrollBox #con1,#con2{width:280px;float:left;}
-            #scrollBox li{height:15px;line-height:15px;text-align:center;}
-            
-        </style>
-        
-        
-    </head>
- <body>
-        <!--div-->
-    <div id="scrollBox" >
-       <div id="text">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="intro" style="height: 100px;">
+		<div id="text">
 			<p>Intro</p>
 			<p>Space, is big.</p>
 			<p>Really big.</p>
@@ -46,26 +31,25 @@
 			<p>-Ursa Minor-</p>
 			<p>-U.N. Owen-</p>
 		</div>
-    </div>
-    <script type="text/javascript">
-		var intro = document.getElementById('scrollBox');
-		var text = document.getElementById('text');
-		function scrollUp(){
-			if(intro.scrollTop >= text.offsetHeight){
-				intro.scrollTop = 0;
-			}else{
-				intro.scrollTop ++;
-			}
-		}
-		var time = 80;
-		var scrolltime = setInterval(scrollUp, time);
-		intro.onmouseover = function(){
-			clearInterval(scrolltime);
-		}
-		intro.onmouseout = function(){
-			scrolltime = setInterval(scrollUp, time);
-		}
-	</script>
- </body>
- 
+	</div>
+	<script type="text/javascript">            
+                var area =document.getElementById('intro');
+                var con1 = document.getElementById('text');
+                function scrollUp(){
+                if(area.scrollTop>=con1.offsetHeight){		//？
+                    area.scrollTop=0;
+                }else{
+                    area.scrollTop++
+                }
+                }                
+                var time = 50;
+                var mytimer=setInterval(scrollUp,time);
+                area.onmouseover=function(){
+                    clearInterval(mytimer);
+                }
+                area.onmouseout=function(){
+                    mytimer=setInterval(scrollUp,time);
+                }
+        </script>
+</body>
 </html>

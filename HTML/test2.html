@@ -1,0 +1,45 @@
+<html>
+<div class="dggd_r" id="h" style="height:400px;overflow:hidden;display:inline;float:left;">
+                <ul id="h1">
+                    <li><a href="#">SD卡雷锋精神的路口附近？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？真爱吗？ </a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？ </a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？细节决定成败 </a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？</a></li>
+                    <li><a href="#">你单身的主要原因？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？ </a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？？</a></li>
+                    <li><a href="#">SD卡雷锋精神的路口附近？</a></li>
+                </ul>
+                <ul id="h2"></ul>
+            </div>
+            <script type="text/javascript">
+                var speed=40;
+                var h2=document.getElementById("h2");
+                var h1=document.getElementById("h1");
+                var h=document.getElementById("h");
+                h2.innerHTML=h1.innerHTML;
+                function Marquee(){
+                    if(h2.offsetTop-h.scrollTop<=0){
+                        h.scrollTop-=h1.offsetHeight;
+                    }                    
+                    else{
+                    h.scrollTop++;
+                    }
+                }
+                var MyMar=setInterval(Marquee,speed);
+                h.onmouseover=function() {clearInterval(MyMar)}
+                h.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+        </script>
+</html>
